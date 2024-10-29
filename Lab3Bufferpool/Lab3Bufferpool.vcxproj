@@ -127,17 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\BufferBlockADT.h" />
-    <ClInclude Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\BufferPoolADT.h" />
-    <ClInclude Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\constants.h" />
     <ClInclude Include="BufferBlock.h" />
+    <ClInclude Include="BufferBlockADT.h" />
+    <ClInclude Include="BufferPoolADT.h" />
+    <ClInclude Include="constants.h" />
     <ClInclude Include="LRUBufferPool.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\main.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\mydatafile.txt" />
+    <Text Include="mydatafile.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,28 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\BufferBlockADT.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\BufferPoolADT.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\constants.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="BufferBlock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LRUBufferPool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BufferBlockADT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferPoolADT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\..\Downloads\LRU Bufferpool -- Programming Assignment 3\mydatafile.txt" />
+    <Text Include="mydatafile.txt" />
   </ItemGroup>
 </Project>
