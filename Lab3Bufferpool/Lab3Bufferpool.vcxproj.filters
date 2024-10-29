@@ -38,5 +38,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="mydatafile.txt" />
+    <Text Include="Buffer Pool Output.txt" />
   </ItemGroup>
 </Project>

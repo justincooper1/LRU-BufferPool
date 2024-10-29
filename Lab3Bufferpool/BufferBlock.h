@@ -24,6 +24,10 @@ public:
     //read the block from pos to pos + sz-1 (or to the end of the block)
 	void getData(int pos, int sz, char* data) override
 	{
+		if (pos + sz > blockSize)
+		{
+			sz = blockSize - pos;
+		}
 		memcpy(data, block + pos, sz);
 	}
 
