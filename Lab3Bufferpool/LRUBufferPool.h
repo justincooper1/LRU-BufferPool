@@ -28,6 +28,8 @@ public:
 
         // Fill the buffer blocks with data from the file
         ifstream file(filename, ios::binary);
+
+        // Can't open file
         if (!file.is_open())
         {
             cerr << "Error: Unable to open file " << filename << endl;
@@ -37,6 +39,7 @@ public:
         char* data = new char[blockSize];
         for (int i = 0; i < poolSize; ++i)
         {
+            // Can't read file
             if (!file.read(data, blockSize))
             {
                 cerr << "Error: Unable to read data from file " << filename << endl;
@@ -67,9 +70,10 @@ public:
         file.close();
 
         // Checks if position is in the file size
-        // Throws error if not
+        // Throws error if position is invalid
         if (pos < 0 || pos + sz > fileSize)
         {
+            // Returns position and file size if invalid
             cerr << "Error: Invalid position requested. Position: " << pos << ", Size: " << sz << ", File Size: " << fileSize << endl;
             return;
         }
@@ -99,9 +103,11 @@ public:
             ifstream file(filename, ios::binary);
             file.seekg(blockIndex * blockSize);
             char* data = new char[blockSize];
+
+            // Can't read file
             if (!file.read(data, blockSize))
             {
-                cerr << "Error: Unable to read data from file for block index " << blockIndex << endl;
+                cerr << "Error: Unable to read data from file for block index " << blockIndex << endl; // Gives index where the issue occurred
                 delete[] data;
                 return;
             }
